@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :aeronaves
+  devise_for :users
   resources :alunos
   
-  get 'pages/aeroclube'
+  get 'pages/home'
  
   
   
